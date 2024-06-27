@@ -23,7 +23,8 @@ public class AvSteps {
     }
 
     @Step
-    public Boolean isTextDisplayed() {
+    public boolean isTextDisplayed() {
+        Utils.sleep(1500);
         boolean result = AvPage.getMyAdText().isDisplayed();
         log.info("Is text displayed: {}", result);
         return result;
