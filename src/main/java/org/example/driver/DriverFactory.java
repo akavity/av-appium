@@ -20,6 +20,7 @@ public class DriverFactory {
 
             case IOS:
                 driver = new IOSDriverManager().createInstance();
+                break;
         }
         return driver;
     }

@@ -16,6 +16,14 @@ public class Utils {
         }
     }
 
+    public static void sleep() {
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
     public static void waitUntilClickable(SelenideElement element) {
         WebDriverWait wait = new WebDriverWait(getWebDriver(), 30);
         wait.until(ExpectedConditions.elementToBeClickable(element));

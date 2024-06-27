@@ -4,9 +4,7 @@
 <suite name="Appium">
 
     <test name="Medium Phone">
-
         <parameter name="platform" value="android"/>
-
         <classes>
             <class name="TestAV">
                 <methods>

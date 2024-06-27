@@ -10,8 +10,8 @@ public class TestAV extends BaseTest {
 
     @Test
     public void exampleTest() {
-        SelenideElement allowButton = $(By.id("com.android.permissioncontroller:id/permission_allow_button"));
 
+        SelenideElement allowButton = $(By.id("com.android.permissioncontroller:id/permission_allow_button"));
         Utils.waitUntilClickable(allowButton);
         allowButton.click();
 
@@ -19,7 +19,6 @@ public class TestAV extends BaseTest {
         clickView.click();
 
         SelenideElement myAdText = $(By.xpath("//android.widget.TextView[@text='Мои объявления']"));
-
         Assert.assertTrue(myAdText.isDisplayed());
     }
 }

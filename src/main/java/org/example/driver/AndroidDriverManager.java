@@ -11,6 +11,7 @@ import java.net.URL;
 import static io.appium.java_client.remote.MobileCapabilityType.NO_RESET;
 
 public class AndroidDriverManager {
+
     private AppiumDriver<MobileElement> driver;
 
     public AppiumDriver<MobileElement> createInstance() {

@@ -13,10 +13,8 @@ public class BaseTest {
     public void setUp(String platform) {
 
         WebDriverRunner.closeWebDriver();
-
         SelenideLogger.addListener("allure", new AllureSelenide().screenshots(true));
         AppiumDriver<?> driver = new DriverFactory().createInstance(platform);
-
         WebDriverRunner.setWebDriver(driver);
     }
 }
