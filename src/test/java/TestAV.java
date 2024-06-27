@@ -10,7 +10,6 @@ public class TestAV extends BaseTest {
 
     @Test
     public void exampleTest() {
-
         SelenideElement allowButton = $(By.id("com.android.permissioncontroller:id/permission_allow_button"));
         Utils.waitUntilClickable(allowButton);
         allowButton.click();
